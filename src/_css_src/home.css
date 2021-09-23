@@ -1,0 +1,127 @@
+/*-------------High level -------------*/
+/*Global colour variables*/
+:root {
+	--b: #fff;
+	--f: #202020;
+	--a: red
+}
+
+html {
+    font-family: 'roboto', sans-serif;
+    background-color: var(--b);
+    color: var(--f);
+}
+
+/*Initialise all*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*text-decoration: none;*/
+	min-width: fit-content;
+}
+
+body {
+	display: grid;
+	grid-gap: 2.06em;
+	padding: 2em;
+	max-width: 100%;
+}
+
+/*-------------------------------------*/
+/*Desktop styling*/
+
+/*--- Nav bar ---*/
+header {
+	border-style: solid;
+}
+
+.logo {
+    float:left;
+    text-align: center;
+}
+
+.navi {
+	list-style-type: none;
+	float: right;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 17px;
+	columns: auto 3;
+}
+.navi li {
+	border-style: solid;
+	border-spacing: 30em;
+}
+
+
+/*--- Home stuff ---*/
+
+.splash {
+	/*display: flex;
+	align-items: center;
+	justify-content: center*/
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+	display: block;
+	height:30em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1.5em;
+}
+
+/*--- Wiki ---*/
+.wiki {
+	display: grid;
+	grid-gap: 2.06em;
+}
+
+.wiki section {
+	display: grid;
+	/*grid-template-columns: 1fr 3fr;*/
+}
+
+.wiki ul {
+	columns: 3;
+	list-style-type: none
+}
+
+/*--- main ---*/
+
+main {
+    border-style: solid;
+	padding: 2em;
+	font-size: .79em
+}
+
+
+
+/*Tablet styling*/
+@media screen and (max-width:60em) {
+	/*img {
+		display: block;
+		height: 10em;
+		object-fit: contain;
+	}*/
+
+}
+
+/*Phone styling*/
+@media screen and (max-width:30em) {
+	body {
+		padding: 2.59em
+	}
+	.wiki header,
+	.wiki section {
+		grid-template-columns: none;
+
+	}
+	.wiki ul {
+		columns: auto 2;
+		column-gap: 1.62em
+	}
+}
