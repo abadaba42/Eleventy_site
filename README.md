@@ -6,6 +6,8 @@ See the following for more assistance:
 > https://11ty.rocks/posts/create-your-first-basic-11ty-website/
 >
 > https://piccalil.li/course/learn-eleventy-from-scratch/
+>
+> https://lea-tortay.com/content/writings/github-pages-eleventy/
 
 
 ## Folder structure
