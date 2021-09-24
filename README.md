@@ -32,3 +32,9 @@ To "compile" and run a local host simply:
 ```
 npm start
 ```
+
+To push public to sub-branch:
+
+```
+git subtree push --prefix public origin gh-pages
+```
