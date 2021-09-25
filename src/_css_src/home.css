@@ -71,23 +71,20 @@ main {
 
 
 .splash {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-start;
-	padding-bottom: 2em;
-	flex-wrap: wrap;
-	object-fit: contain
 }
 
 img {
-	display: block;
+
+	display: inline-block;
 	height:30em;
 	padding: 1.5em;
 }
 
 .slugline {
-	align-self: center;
+	display: inline-block;
+	/*Don't love this, theres a better way */
+	vertical-align: top;
+	padding-top: 15em;
 }
 
 /*--- Wiki ---*/
@@ -120,10 +117,9 @@ img {
 }
 
 /*Phone styling*/
-/*
 @media screen and (max-width:30em) {
 	body {
-		/*padding: 2.59em
+		/*padding: 2.59em*/
 	}
 	.wiki header,
 	.wiki section {
@@ -134,10 +130,11 @@ img {
 		columns: auto 2;
 		column-gap: 1.62em
 	}
-
-	.splash {
+	
+	.slugline {
 		display: block;
-		justify-content: center;
+		justify-content: top;
+		padding-top: 0em;
 	}
 
-}*/
+}
