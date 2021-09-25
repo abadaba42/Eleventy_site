@@ -74,9 +74,10 @@ main {
 }
 
 img {
-
 	display: inline-block;
-	height:30em;
+	max-height:30em;
+	height: auto;
+	width: auto;
 	padding: 1.5em;
 }
 
