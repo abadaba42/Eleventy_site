@@ -69,11 +69,6 @@ main {
 	font-size: .79em
 }
 
-img {
-	display: block;
-	height:30em;
-	padding: 1.5em;
-}
 
 .splash {
 	display: flex;
@@ -82,6 +77,13 @@ img {
 	align-items: flex-start;
 	padding-bottom: 2em;
 	flex-wrap: wrap;
+	object-fit: contain
+}
+
+img {
+	display: block;
+	height:30em;
+	padding: 1.5em;
 }
 
 .slugline {
