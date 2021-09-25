@@ -69,18 +69,24 @@ main {
 	font-size: .79em
 }
 
+
+.splash {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	padding-bottom: 2em;
+	flex-wrap: wrap;
+}
+
 img {
 	display: block;
 	height:30em;
 	padding: 1.5em;
 }
 
-.splash {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 2em;
-	flex-wrap: wrap;
+.slugline {
+	align-self: center;
 }
 
 /*--- Wiki ---*/
