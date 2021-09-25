@@ -75,9 +75,8 @@ main {
 
 img {
 	display: inline-block;
-	max-height:30em;
-	height: auto;
-	width: auto;
+	height:750px;
+	width: 500px;
 	padding: 1.5em;
 }
 

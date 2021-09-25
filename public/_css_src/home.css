@@ -74,9 +74,9 @@ main {
 }
 
 img {
-
 	display: inline-block;
-	height:30em;
+	height:750px;
+	width: 500px;
 	padding: 1.5em;
 }
 
