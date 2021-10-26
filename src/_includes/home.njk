@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" >
-    <link rel="stylesheet" type="text/css" href="_css_src/home.css" />
+    <link rel="stylesheet" type="text/css" href="_css_src/home2.css" />
     <title>loose_goose: {{ title }}</title>
 </head>
 <body>
@@ -23,20 +23,22 @@
 
     <main>
         <div class = "splash">
-            <img src="tree.jpg" alt="tree">
-            <span>title</span>
+            <div class = "hero_img">
+                <img src="tree.jpg" alt="tree">
+            </div>
             <div class = "slugline">
                 <h1>hi there! </h1>
+                <p>This is a place for me to put some stuff.<br>It's not much really but i suppose it's mine. Have a poke around!</p>
             </div>
-            <p>This is a place for me to put some stuff.<br>It's not much really but i suppose it's mine. Have a poke around!<p>
             </div>
         </div>
 
         <!-- Seperating line -->
         <hr class = "line">
 
-        {{content | safe}}
-
+        <div class = "wiki">
+            {{content | safe}}
+        </div>
 
     </main>
 </body>

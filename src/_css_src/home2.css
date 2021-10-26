@@ -1,0 +1,94 @@
+/*------------- Global -------------*/
+/*Global colour variables*/
+:root {
+	--b: #417A88;/*Background*/
+	--f: #EBE33F;/*Foreground accent 1*/
+	--a: #B3B03D;/*Foreground accent 2*/
+	--t: #FFFFFF;/*text*/
+
+    --m: 20px;/*margin between elements*/
+}
+
+html {
+    font-family: 'roboto', sans-serif;
+    background-color: var(--b);
+    color: var(--f);
+}
+
+/*Initialise all*/
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	/*box-sizing: border-box;*/
+	/*min-width: fit-content;*/
+}
+
+
+/*hyperlinks*/
+a {
+    text-decoration: none;
+	color: var(--t);
+}
+
+/*-------------------------------------*/
+/*Header*/
+header {
+    display: grid;
+    grid-template-columns: 2;
+	
+    border-style: solid;
+    margin: var(--m);
+}
+
+.logo {
+    float:left;
+}
+
+.navi {
+	float: right;
+
+	columns: auto 3;
+	list-style-type: none;/*get rid of dots*/
+	text-align: center;
+	padding: 14px 16px;
+}
+.navi li {
+	border-style: solid;
+	border-spacing: 30em;
+}
+/*-------------------------------------*/
+/*Content/Main*/
+
+main {
+	/*margin: var(--m);*/
+	/*width: 100%;*/
+}
+
+.splash {
+	display: flex;
+	flex-wrap: wrap; /*Enables the horizontal then vertial stacking*/
+	align-items: center; /*keep children centred vertically*/
+	justify-content: space-evenly; /*keep children centred horizontally*/
+	border-style: solid;
+}
+.slugline {
+	border-style: solid;
+}
+
+.hero_img {
+	border-style: solid;
+	border-color: red;
+
+	object-fit: scale-down;
+	padding: 3px;
+	
+}
+
+
+/*-----------------*/
+/*Links/map*/
+
+.wiki {
+	display: block;
+}

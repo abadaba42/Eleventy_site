@@ -13,5 +13,13 @@
     "@11ty/eleventy": "^0.12.1"
   },
   "dependencies": {},
-  "description": ""
+  "description": "To remind you this is a website generated using eleventy and nunjuck templates. See the following for more assistance:",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abadaba42/Eleventy_site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abadaba42/Eleventy_site/issues"
+  },
+  "homepage": "https://github.com/abadaba42/Eleventy_site#readme"
 }

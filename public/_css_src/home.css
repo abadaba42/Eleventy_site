@@ -1,9 +1,10 @@
-/*-------------High level -------------*/
+/*------------- Global -------------*/
 /*Global colour variables*/
 :root {
-	--b: #ECE8D6;
-	--f: #606D75;
-	--a: red
+	--b: #417A88;/*Background*/
+	--f: #EBE33F;/*Foreground accent 1*/
+	--a: #B3B03D;/*Foreground accent 2*/
+	--t: #FFFFFF;/*text*/
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 * {
 	margin: 0;
 	padding: 0;
-	/*box-sizing: border-box;*/
+	box-sizing: border-box;
 	text-decoration: none;
 	min-width: fit-content;
 }
@@ -29,9 +30,10 @@ body {
 	font-size: 2em;
 }
 
+/*hyperlinks*/
 a {
 	text-decoration: none;
-	color: #606D75;
+	color: var(--t);
 }
 
 /*-------------------------------------*/
@@ -39,7 +41,8 @@ a {
 
 /*--- Nav bar ---*/
 header {
-	/*border-style: solid;*/
+	border-style: solid;
+	margin: 1em;
 }
 
 .logo {
@@ -65,26 +68,34 @@ header {
 
 main {
 	border-style: solid;
-	padding: 3em;
-	font-size: .79em
+	margin: 1em;
+	padding: 1em;
+	font-size: .79em;
 }
 
 
 .splash {
+	display: block;
+	width: 100%;
+	height: 28em;
 }
 
 img {
-	display: inline-block;
-	height:750px;
-	width: 500px;
+	height : 25em;
 	padding: 1.5em;
+	vertical-align: middle;
+	float: left;
 }
 
 .slugline {
-	display: inline-block;
-	/*Don't love this, theres a better way */
-	vertical-align: top;
-	padding-top: 15em;
+	height: 100%;
+	/*vertical-align: top;*/
+	display: inline;
+}
+
+p {
+	display: inline;
+	color: var(--a);
 }
 
 /*--- Wiki ---*/
@@ -103,24 +114,16 @@ img {
 	list-style-type: none
 }
 
-
-
-
-/*Tablet styling*/
-@media screen and (max-width:60em) {
-	/*img {
-		display: block;
-		height: 10em;
-		object-fit: contain;
-	}*/
-
+::selection,
+a:hover,
+a:hover *,
+*:target {
+	color: var(--a)
 }
 
+/*--------------------------------------*/
 /*Phone styling*/
 @media screen and (max-width:30em) {
-	body {
-		/*padding: 2.59em*/
-	}
 	.wiki header,
 	.wiki section {
 		grid-template-columns: none;
@@ -130,11 +133,9 @@ img {
 		columns: auto 2;
 		column-gap: 1.62em
 	}
-	
-	.slugline {
-		display: block;
-		justify-content: top;
-		padding-top: 0em;
-	}
 
 }
+
+
+
+
