@@ -32,3 +32,9 @@ To "compile" and run a local host simply:
 ```
 npm start
 ```
+
+## Summary of nunjuck files
+- **about**: format file for the about page
+- **boilerplate**: This is the important one! This has the header, and basic html for all pages
+- **Home**: This is the format file for the home page
+- **page**: General format file for content
