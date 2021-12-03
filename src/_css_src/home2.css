@@ -3,9 +3,14 @@
 :root {
 	--b: #417A88;/*Background*/
 	--f: #EBE33F;/*Foreground accent 1*/
-	--a: #B3B03D;/*Foreground accent 2*/
+	--f2: #B3B03D;/*Foreground accent 2*/
 	--t: #FFFFFF;/*text*/
 
+	
+	--b: #efe8da;
+	--f: #01383b;
+	--t: #000000;
+	
     --m: 20px;/*margin between elements*/
 }
 
@@ -13,6 +18,8 @@ html {
     font-family: 'roboto', sans-serif;
     background-color: var(--b);
     color: var(--f);
+	/*max-width: 100%;*/
+
 }
 
 /*Initialise all*/
@@ -20,8 +27,7 @@ html {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	/*box-sizing: border-box;*/
-	/*min-width: fit-content;*/
+	min-width: fit-content;
 }
 
 
@@ -31,64 +37,88 @@ a {
 	color: var(--t);
 }
 
-/*-------------------------------------*/
+
+
+/*----------------locals---------------------*/
 /*Header*/
 header {
     display: grid;
-    grid-template-columns: 2;
-	
+    grid-template-columns: 3fr 1fr;
     border-style: solid;
     margin: var(--m);
 }
 
 .logo {
-    float:left;
+	/*border-style: solid;/*temp*/
 }
 
-.navi {
-	float: right;
+.dither {
+	height: 100px;
+}
 
-	columns: auto 3;
+nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.navi {
+	/*border-style: solid;/*temp*/
+	columns: 3;
 	list-style-type: none;/*get rid of dots*/
 	text-align: center;
 	padding: 14px 16px;
 }
-.navi li {
+.navi li a {
+	display: block;
 	border-style: solid;
-	border-spacing: 30em;
+	padding: 6px 16px;
 }
+
 /*-------------------------------------*/
 /*Content/Main*/
 
 main {
-	/*margin: var(--m);*/
-	/*width: 100%;*/
+	margin: var(--m);
+	border-style: solid;
 }
 
+article {
+	display: flex;
+	flex-direction: column;
+	list-style-position: inside;
+}
+
+ul ul{
+	margin-left:15px;
+}
+
+
+/*EXLUSIVE TO HOMPAGE*/
 .splash {
 	display: flex;
 	flex-wrap: wrap; /*Enables the horizontal then vertial stacking*/
 	align-items: center; /*keep children centred vertically*/
 	justify-content: space-evenly; /*keep children centred horizontally*/
-	border-style: solid;
 }
 .slugline {
-	border-style: solid;
+	border-style: groove;
+	padding: 10px;
+	margin: 15px;
 }
-
 .hero_img {
-	border-style: solid;
-	border-color: red;
-
 	object-fit: scale-down;
-	padding: 3px;
-	
+	padding: 15px;
 }
-
 
 /*-----------------*/
 /*Links/map*/
 
 .wiki {
-	display: block;
+	display: grid;
+}
+
+
+.wiki ul {
+	columns: 3;
+	list-style-type: none
 }
