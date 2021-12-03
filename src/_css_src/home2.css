@@ -18,7 +18,7 @@ html {
     font-family: 'roboto', sans-serif;
     background-color: var(--b);
     color: var(--f);
-	/*max-width: 100%;*/
+	max-width: 100%;
 
 }
 
