@@ -1,6 +1,6 @@
 ---
 title: blog_list
-layout: "base.njk"
+layout: "boilerplate.njk"
 ---
 
 <h1>Blog:</h1>
