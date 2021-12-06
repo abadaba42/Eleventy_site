@@ -19,7 +19,7 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
-	min-width: fit-content;
+	/*min-width: fit-content;*/
 }
 
 body {
