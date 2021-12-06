@@ -19,6 +19,7 @@ html {
     background-color: var(--b);
     color: var(--f);
 	/*max-width:100%;*/
+	min-width: min-content;
 
 }
 
@@ -28,7 +29,7 @@ html {
 	padding: 0;
 	text-decoration: none;
 	/*min-width: fit-content;*/
-	min-width:min-content;
+	/*min-width:min-content;*/
 }
 
 
@@ -50,7 +51,7 @@ header {
 }
 
 .logo {
-	/*border-style: solid;/*temp*/
+	border-style: solid;/*temp*/
 }
 
 .dither {
@@ -85,7 +86,7 @@ main {
 
 article {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap; /*attempt to fix mobile issues*/
 	flex-direction: column;
 	list-style-position: inside;
 }
