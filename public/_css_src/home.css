@@ -63,6 +63,9 @@ header {
 	border-spacing: 30em;
 }
 
+.dither {
+	height: 100px;
+}
 /*-------------------------------------*/
 /*--- main ---*/
 
