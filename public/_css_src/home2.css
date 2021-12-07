@@ -26,7 +26,7 @@ html {
     background-color: var(--b);
     color: var(--f);
 	min-width: min-content;
-	font-size: large;
+	font-size: 20px;
 }
 
 
