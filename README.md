@@ -38,3 +38,20 @@ npm start
 - **boilerplate**: This is the important one! This has the header, and basic html for all pages
 - **Home**: This is the format file for the home page
 - **page**: General format file for content
+
+
+## Future implementations:
+
+- **colour scheme/design**
+
+- **markdown styling**:
+    - link highlighting
+    - better formatting: h1,h2 etc
+
+- **markdown plugins**:
+    - [ ] footnotes
+    - [ ] mathjax
+    - See: https://www.npmjs.com/search?q=keywords:markdown-it-plugin https://www.11ty.dev/docs/languages/markdown/
+- **photos**:
+    - [ ] custom css
+    - [ ] gallery
