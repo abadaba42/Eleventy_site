@@ -43,6 +43,7 @@ npm start
 ## Future implementations:
 
 - **colour scheme/design**
+- **optimise photos**
 
 - **markdown styling**:
     - link highlighting
