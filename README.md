@@ -50,9 +50,9 @@ npm start
     - better formatting: h1,h2 etc
 
 - **markdown plugins**:
-    - [ ] footnotes
-    - [ ] mathjax
+    - [x] footnotes
+    - [x] katex
     - See: https://www.npmjs.com/search?q=keywords:markdown-it-plugin https://www.11ty.dev/docs/languages/markdown/
 - **photos**:
     - [ ] custom css
-    - [ ] gallery
+    - [ ] gallery https://www.youtube.com/watch?v=uKVVSwXdLr0
