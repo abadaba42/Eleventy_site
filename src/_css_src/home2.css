@@ -193,3 +193,13 @@ footer {
 	padding-left: 20px;
 	padding-bottom: 20px;
 }
+
+::marker {/*find a way to make this inline*/
+	display: inline;
+	color: blue;
+}
+
+/*link styling in-text*/
+sup.footnote-ref a {
+	color: blue;
+}
