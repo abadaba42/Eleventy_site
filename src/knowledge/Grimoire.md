@@ -4,4 +4,5 @@ title: Grimoire
 
 # Grimoire
 
-An idea shamelessly stolen from [fdisk](https://fdisk.space/grimoire/) and [mineral existance](https://mineralexistence.com/grimoire.html). This is my collection of little snippets.
+An idea shamelessly stolen from [fdisk](https://fdisk.space/grimoire/) and [mineral existence](https://mineralexistence.com/grimoire.html). This is my collection of little snippets and explanations of how certain programs work.
+
