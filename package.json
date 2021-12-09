@@ -12,7 +12,11 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "markdown-it": "^12.2.0",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-katex": "^2.0.3"
+  },
   "description": "To remind you this is a website generated using eleventy and nunjuck templates. See the following for more assistance:",
   "repository": {
     "type": "git",
