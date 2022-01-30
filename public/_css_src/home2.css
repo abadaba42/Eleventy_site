@@ -71,7 +71,7 @@ nav {
 
 main {
 	margin: var(--m);
-	border-style: solid;
+	/*border-style: solid;*/
 	padding: 20px;
 }
 
@@ -194,9 +194,11 @@ footer {
 	padding-bottom: 20px;
 }
 
+/*TODO inline references (end part)*/
+/*also applies to acordian arrows*/
 ::marker {/*find a way to make this inline*/
 	display: inline;
-	color: blue;
+	color: red;
 }
 
 /*link styling in-text*/
