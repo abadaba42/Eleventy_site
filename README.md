@@ -22,7 +22,7 @@ See the following for more assistance:
 
 ## Commands_reminder
 
-To run eleventy site generaor in a new environment, npm modules have to be installed:
+To run eleventy site generator in a new environment, npm modules have to be installed:
 ```
 npm init -y
 npm install @11ty/eleventy
