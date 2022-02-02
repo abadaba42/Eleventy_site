@@ -10,10 +10,10 @@ title: London
         <img src="{{ '/assests/london/london_1.jpg' | url }}" alt="london_1">
     </div>
     <div class = "gallery_item">
-        <img src="/assests/london/london_2.jpg" alt="london_2">
+        <img src="{{ '/assests/london/london_2.jpg' | url }}" alt="london_2">
     </div>
     <div class = "gallery_item">
-        <img src="/assests/london/london_3.jpg" alt="london_3">
+        <img src="{{ '/assests/london/london_3.jpg' | url }}" alt="london_3">
     </div>
     <div class = "gallery_item">
         <img src="{{ '/assests/london/london_4.jpg' | url }}" alt="london_4">
