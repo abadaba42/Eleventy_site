@@ -22,12 +22,16 @@
 }
 
 html {
+	min-width: min-content;
+	min-height: max-content;
+	width: 100%;
+
 	font-family: 'roboto', sans-serif;
     background-color: var(--b);
     color: var(--f);
-	min-width: min-content;
 	font-size: 20px;
-	min-height: 100vh;
+
+
 }
 
 
