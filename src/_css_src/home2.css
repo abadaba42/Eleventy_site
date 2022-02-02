@@ -23,15 +23,13 @@
 
 html {
 	min-width: min-content;
-	min-height: max-content;
 	width: 100%;
-
+	min-height: 100vh;
+	
 	font-family: 'roboto', sans-serif;
     background-color: var(--b);
     color: var(--f);
 	font-size: 20px;
-
-
 }
 
 
