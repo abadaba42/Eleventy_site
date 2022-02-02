@@ -24,7 +24,6 @@
 html {
 	min-width: min-content;
 	width: 100%;
-	min-height: 100vh;
 	
 	font-family: 'roboto', sans-serif;
     background-color: var(--b);
@@ -32,8 +31,9 @@ html {
 	font-size: 20px;
 }
 
-
-
+body {
+	min-height: 10000000px;
+}
 
 /*----------------locals---------------------*/
 /*Header*/
