@@ -22,11 +22,12 @@
 }
 
 html {
-    font-family: 'roboto', sans-serif;
+	font-family: 'roboto', sans-serif;
     background-color: var(--b);
     color: var(--f);
 	min-width: min-content;
 	font-size: 20px;
+	min-height: 100vh;
 }
 
 
