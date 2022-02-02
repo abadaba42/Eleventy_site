@@ -75,7 +75,8 @@ nav {
 main {
 	margin: var(--m);
 	/*border-style: solid;*/
-	padding: 20px;
+	padding: 0.5rem;
+	padding-top: 1rem;
 }
 
 /*------Article-markdown styling-------*/
