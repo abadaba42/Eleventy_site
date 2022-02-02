@@ -1,0 +1,33 @@
+
+html {
+    background-color: white;
+}
+
+main {
+    border-style: solid;
+    width: auto;
+}
+article {
+    border-style: solid;
+}
+
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    height: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery_item {
+    margin: 15px;
+}
