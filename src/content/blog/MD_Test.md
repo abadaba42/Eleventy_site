@@ -1,5 +1,5 @@
 ---
-title: Blog1
+title: MD_test
 ---
 
 # Markdown syntax guide
@@ -71,3 +71,12 @@ alert(message);
 ## Inline code
 
 This web site is using `markedjs/marked`.
+
+## Block maths
+$$
+S_{test} = \sum_{i=1}^n \frac{x_i}{y_i-E_{test}}
+$$
+
+## Inline Maths
+
+To find this correct $E$ value in the range $1 \rightarrow y_\text{min}$, we will use a binary search algorithm. To implement the binary search on this range we will store all the values in $1 \rightarrow y_\text{min}$ in an array (doing which will take $O(y_\text{min})$). Now a binary search will be performed on this array comparing $S_{test}$ with $S$. Since the changing variable $E_{test}$ is being subtracted in the denominator, if $S_{test} \leq S$ then the binary search will select the larger sub-array and vice-versa.
