@@ -1,115 +1,210 @@
+/*----------------------------------*/
 /*------------- Global -------------*/
+/*----------------------------------*/
 /*Global colour variables*/
 :root {
-	--b: #417A88;/*Background*/
-	--f: #EBE33F;/*Foreground accent 1*/
-	--a: #B3B03D;/*Foreground accent 2*/
-	--t: #FFFFFF;/*text*/
+	/*text*/
+	--t: #000000;
+	--dt: #ebe0cc;/*TODO Fix the dark scheme*/
+	/*background*/
+	--b: #ebe0cc;
+	--db: #474647;
+
+	--background: var(--b);
+	--text: var(--t);
+	
+	/*accents*/
+	--f: #B597C2;
+	--f2: #227C9D;
+	--f3: #D6605C;
+	--f4: #596F62;
+	--f5: #504136;
+
+	/*margin*/
+    --m: 20px;
+
+	/*noise*/
+	--n: url(data:image/png;base64,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);
 }
 
-html {
-    font-family: 'roboto', sans-serif;
-    background-color: var(--b);
-    color: var(--f);
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: var(--db);
+		--text: var(--dt);
+		--f: var(--f4);
+	}
 }
 
 /*Initialise all*/
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	text-decoration: none;
-	/*min-width: fit-content;*/
+	color: var(--text);
+}
+
+html {
+	background-image: var(--n);
+	min-width: min-content;
+	width: 100%;
+	
+	font-family: 'roboto', sans-serif;
+    background-color: var(--background);
+    color: var(--f);
+	font-size: 20px;
 }
 
 body {
-	display: grid;
-	/*grid-gap: 2.06em;*/
-	/*padding: 2em;*/
-	max-width: 100%;
-	font-size: 2em;
+	/*min-height: 900px;*/
 }
+/*----------------------------------*/
+/*------------- locals -------------*/
+/*----------------------------------*/
 
-/*hyperlinks*/
-a {
-	text-decoration: none;
-	color: var(--t);
-}
-
-/*-------------------------------------*/
-/*Header*/
-
-/*--- Nav bar ---*/
+/* ----- Navigation bar ---- */
 header {
-	border-style: solid;
-	margin: 1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-style: solid;
+    margin: var(--m);
 }
 
 .logo {
-    float:left;
-    text-align: center;
-}
-
-.navi {
-	list-style-type: none;
-	float: right;
-	text-align: center;
-	padding: 14px 16px;
-	font-size: 17px;
-	columns: auto 3;
-}
-.navi li {
-	border-style: solid;
-	border-spacing: 30em;
+	/*border-style: solid;/*temp*/
 }
 
 .dither {
 	height: 100px;
 }
-/*-------------------------------------*/
-/*--- main ---*/
 
-main {
+nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.navi {
+	columns: 3;
+	list-style-type: none;/*get rid of dots*/
+	text-align: center;
+	padding: 14px 16px;
+}
+.navi li a {
+	display: block;
 	border-style: solid;
-	margin: 1em;
-	padding: 1em;
-	font-size: .79em;
+	padding: 6px 16px;
+	background-color: var(--f);
+	background-image: var(--n);
 }
 
+/* ----- Main article ----- */
+main {
+	margin: var(--m);
+	/*border-style: solid;*/
+	padding: 0.5rem;
+	padding-top: 1rem;
+}
 
-.splash {
+/*Article-markdown styling*/
+article {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	max-width: 700px;
+	border-style: solid;
+	border-radius: 10px;
+
+	list-style-position: inside;
+}
+
+article table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	display: block;
+	width: max-content;
+	max-width: 100%;
+	overflow: auto;
+}
+
+table th {
+	font-weight: 600;
+  }
+  
+table th,
+table td {
+	padding: 6px 13px;
+	border: 1px solid #30363d;
+  }
+  
+table tr {
+	background-color: var(--background);
+	border-top: 1px solid #21262d;
+  }
+  
+table tr:nth-child(2n) {
+	background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+table img {
+	background-color: transparent;
+  }
+
+article img {
 	display: block;
 	width: 100%;
-	height: 28em;
+	max-height: 200vh;
+	object-fit: cover;
+	margin: 2rem auto;
+  }
+
+blockquote {
+	margin: 2rem 0;
+	padding: 0.5em 1rem;
+	border-left: 3px solid #50723C;/*TODO use variable*/
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 0 0.25rem 0.25rem 0;
+  }
+
+code:not([class*="language"]) {
+	font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+	font-size: 1.75ex;
+	color: #444;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding-right: 0.15em;
+	padding-left: 0.15em;
+  }
+
+ul ul{/*This is for indented lists*/
+	margin-left:15px;
 }
 
-img {
-	height : 25em;
-	padding: 1.5em;
-	vertical-align: middle;
-	float: left;
-}
 
+/*----- EXLUSIVE TO HOMPAGE -----*/
+.splash {
+	display: flex;
+	flex-wrap: wrap; /*Enables the horizontal then vertial stacking*/
+	align-items: center; /*keep children centred vertically*/
+	justify-content: space-evenly; /*keep children centred horizontally*/
+}
 .slugline {
-	height: 100%;
-	/*vertical-align: top;*/
-	display: inline;
+	background-color: var(--f);
+	background-image: var(--n);
+	border-style: solid;
+	padding: 10px;
+	margin: 15px;
+}
+.hero_img {
+	object-fit: scale-down;
+	padding: 15px;
 }
 
-p {
-	display: inline;
-	color: var(--a);
-}
+/*-----------------*/
+/*Links/map*/
 
-/*--- Wiki ---*/
 .wiki {
+	padding-top: 10px;
 	display: grid;
-	grid-gap: 2.06em;
-}
-
-.wiki section {
-	display: grid;
-	/*grid-template-columns: 1fr 3fr;*/
 }
 
 .wiki ul {
@@ -117,28 +212,64 @@ p {
 	list-style-type: none
 }
 
-::selection,
-a:hover,
-a:hover *,
-*:target {
-	color: var(--a)
+section {
+	padding-bottom: 20px;
 }
 
-/*--------------------------------------*/
-/*Phone styling*/
-@media screen and (max-width:30em) {
-	.wiki header,
-	.wiki section {
-		grid-template-columns: none;
+/*-----------------*/
+footer {
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
 
-	}
-	.wiki ul {
-		columns: auto 2;
-		column-gap: 1.62em
-	}
+/*TODO inline references (end part)*/
+/*also applies to acordian arrows*/
+::marker {/*find a way to make this inline*/
+	display: inline;
+	color: var(--f);
+}
 
+/*link styling in-text*/
+sup.footnote-ref a {
+	color: blue;
 }
 
 
+/*COLOUR TESTING!!!!*/
+.test li {
+	display: block;
+	border-style: solid;
+	padding: 15px;
+	margin: 15px;
+}
 
+.test li:nth-child(1){
+	background-color: var(--f);
+	background-image: var(--n);
+
+}
+
+.test li:nth-child(2){
+	background-color: var(--f2);
+	background-image: var(--n);
+
+}
+
+.test li:nth-child(3){
+	background-color: var(--f3);
+	background-image: var(--n);
+
+}
+
+.test li:nth-child(4){
+	background-color: var(--f4);
+	background-image: var(--n);
+
+}
+
+.test li:nth-child(5){
+	background-color: var(--f5);
+	background-image: var(--n);
+
+}
 
