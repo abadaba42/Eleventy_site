@@ -1,0 +1,52 @@
+---
+layout: boilerplate.njk
+---
+
+<article>
+    <div class = "wiki">
+        <details open>
+        <summary> <h1 style="display:inline;"> Writing:</h1> </summary>
+        <section>
+            <ul>
+            {% for blog in collections.blogs %}
+            <li> <a href = "{{ blog.url }}index.html"> {{ blog.data.title }} </a> </li>
+            {%- endfor %}
+            </ul>
+        </section>
+        </details>
+        <details open>
+        <summary><h1 style="display:inline;"> Experiments:</h1> </summary>
+        <section>
+            <ul>
+            {% for project in collections.projects %}
+            <li> <a href = "{{ project.url }}index.html"> {{ project.data.title }} </a> </li>
+            {%- endfor %}
+            </ul>
+        </section>
+        </details>
+        <details open>
+        <summary> <h1 style="display:inline;"> Photos:</h1> </summary>
+        <section>
+            <ul>
+            {% for photo in collections.photos %}
+            <li> <a href = "{{ photo.url }}index.html"> {{ photo.data.title }} </a> </li>
+            {%- endfor %}
+            </ul>
+        </section>
+        </details>
+        <details open>
+        <summary> <h1 style="display:inline;"> Knowledge:</h1> </summary>
+        <section>
+            <ul>
+            {% for knowledge in collections.knowledge %}
+            <li> <a href = "{{ knowledge.url }}index.html"> {{ knowledge.data.title }} </a> </li>
+            {%- endfor %}
+            </ul>
+        </section>
+        </details>
+    </div>
+
+
+
+    {{content | safe}}
+</article>

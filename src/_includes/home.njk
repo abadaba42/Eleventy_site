@@ -16,37 +16,25 @@ layout: boilerplate.njk
 <!-- Seperating line -->
 <hr class = "line">
 
-<div class = "wiki">
-    <details>
-        <summary> <h1 style="display:inline;">Writings:</h1> </summary>
-        <section>
-            <ul>
-            {% for blog in collections.blogs %}
-            <li> <a href = "{{ blog.url }}index.html"> ~ {{ blog.data.title }} </a> </li>
-            {%- endfor %}
-            </ul>
-        </section>
-    </details>
-    <details>
-        <summary><h1 style="display:inline;">Experiments:</h1> </summary>
-        <section>
-            <ul>
-            {% for project in collections.projects %}
-            <li> <a href = "{{ project.url }}index.html"> ~ {{ project.data.title }} </a> </li>
-            {%- endfor %}
-            </ul>
-        </section>
-    </details>
-    <details>
-        <summary> <h1 style="display:inline;">Photos:</h1> </summary>
-        <section>
-            <ul>
-            {% for photo in collections.photos %}
-            <li> <a href = "{{ photo.url }}index.html"> ~ {{ photo.data.title }} </a> </li>
-            {%- endfor %}
-            </ul>
-        </section>
-    </details>
-</div>
 
+<article>
+    <h3>here are some things i think are ok</h3>
+    <div class = "card_grid">
+        <div class="card">
+            <a href = "/content/photo/Faves/index.html">
+            <h5>Favourite photos</h5>
+            <img src="{{ '/assests/stack_dither.jpg' | url }}" alt="Stacks">
+            </a>
+        </div>
+        <div class="card">
+            <h5>Bus number game</h5>
+            <p> Stil working on this tbh</p>
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <h5>London photos</h5>
+            <img src="{{ '/assests/london/london_7.jpg' | url }}" alt="Stacks">
+        </div>
+    </div>
+</article>
 {{content | safe}}

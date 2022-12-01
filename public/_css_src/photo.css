@@ -1,11 +1,8 @@
 
-html {
-    background-color: white;
-}
-
 main {
     border-style: solid;
     width: auto;
+    padding: 50px;
 }
 article {
     border-style: solid;

@@ -43,16 +43,10 @@ npm start
 ## Future implementations:
 
 - **colour scheme/design**
-- **optimise photos**
 
 - **markdown styling**:
     - link highlighting
-    - better formatting: h1,h2 etc
 
-- **markdown plugins**:
-    - [x] footnotes
-    - [x] katex
-    - See: https://www.npmjs.com/search?q=keywords:markdown-it-plugin https://www.11ty.dev/docs/languages/markdown/
 - **photos**:
-    - [ ] custom css
     - [ ] gallery https://www.youtube.com/watch?v=uKVVSwXdLr0
+    - improve sizes

@@ -10,7 +10,7 @@ Hi, I'm Gus! I'm someone who gets distracted too easily. I'm mostly interested i
 
 <br>Please enjoy my attempt at a little digital garden of sorts.
 
-<img src="{{ '/assests/stack.jpg' | url }}" alt="Abstract photo of stacked iron blocks">
+<img src="{{ '/assests/stack_dither.jpg' | url }}" alt="Abstract photo of stacked iron blocks">
 
 ### Disclaimer
 some text here

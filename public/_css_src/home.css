@@ -8,17 +8,21 @@
 	--dt: #ebe0cc;/*TODO Fix the dark scheme*/
 	/*background*/
 	--b: #ebe0cc;
+	/*--b: #fff8e7; cosmic latte option*/
 	--db: #474647;
 
 	--background: var(--b);
 	--text: var(--t);
 	
 	/*accents*/
+	
 	--f: #B597C2;
 	--f2: #227C9D;
 	--f3: #D6605C;
 	--f4: #596F62;
 	--f5: #504136;
+	
+	--accent: var(--f);
 
 	/*margin*/
     --m: 20px;
@@ -31,7 +35,6 @@
 	:root {
 		--background: var(--db);
 		--text: var(--dt);
-		--f: var(--f4);
 	}
 }
 
@@ -50,12 +53,12 @@ html {
 	
 	font-family: 'roboto', sans-serif;
     background-color: var(--background);
-    color: var(--f);
+    color: var(--accent);
 	font-size: 20px;
 }
 
 body {
-	min-height: 900px;
+	min-height: 900px;/*For short displays*/
 }
 /*----------------------------------*/
 /*------------- locals -------------*/
@@ -69,9 +72,7 @@ header {
     margin: var(--m);
 }
 
-.logo {
-	/*border-style: solid;/*temp*/
-}
+
 
 .dither {
 	height: 100px;
@@ -91,8 +92,9 @@ nav {
 .navi li a {
 	display: block;
 	border-style: solid;
+	border-radius: 8px;
 	padding: 6px 16px;
-	background-color: var(--f);
+	background-color: var(--accent);
 	background-image: var(--n);
 }
 
@@ -130,65 +132,72 @@ article table {
 table th {
 	font-weight: 600;
   }
-  
+
 table th,
 table td {
 	padding: 6px 13px;
 	border: 1px solid #30363d;
-  }
-  
+
+}
+
+table thead tr{
+	background-color: var(--accent);
+}
 table tr {
 	background-color: var(--background);
 	border-top: 1px solid #21262d;
-  }
-  
+}
 table tr:nth-child(2n) {
 	background-color: rgba(0, 0, 0, 0.05);
-  }
-  
+}
+
 table img {
 	background-color: transparent;
-  }
+}
 
 article img {
 	display: block;
 	width: 100%;
 	max-height: 200vh;
 	object-fit: cover;
-	margin: 2rem auto;
-  }
+	/* margin: 2rem auto; */
+}
 
 blockquote {
 	margin: 2rem 0;
 	padding: 0.5em 1rem;
-	border-left: 3px solid #50723C;/*TODO use variable*/
+	border-left: 3px solid var(--accent);
 	background-color: rgba(0, 0, 0, 0.05);
 	border-radius: 0 0.25rem 0.25rem 0;
-  }
+}
 
 code:not([class*="language"]) {
 	font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
 	font-size: 1.75ex;
-	color: #444;
 	background-color: rgba(0, 0, 0, 0.1);
+	filter: brightness(150%);
 	padding-right: 0.15em;
 	padding-left: 0.15em;
-  }
+}
 
 ul ul{/*This is for indented lists*/
-	margin-left:15px;
+	margin-left:25px;
 }
 
 
 /*----- EXLUSIVE TO HOMPAGE -----*/
+
+hr {
+	margin: 20px;
+}
 .splash {
 	display: flex;
 	flex-wrap: wrap; /*Enables the horizontal then vertial stacking*/
 	align-items: center; /*keep children centred vertically*/
-	justify-content: space-evenly; /*keep children centred horizontally*/
+	justify-content: center; /*keep children centred horizontally*//*space-evenly*/
 }
 .slugline {
-	background-color: var(--f);
+	background-color: var(--accent);
 	background-image: var(--n);
 	border-style: solid;
 	padding: 10px;
@@ -199,24 +208,39 @@ ul ul{/*This is for indented lists*/
 	padding: 15px;
 }
 
-/*-----------------*/
-/*Links/map*/
-
-.wiki {
-	padding-top: 10px;
+.card_grid { 
 	display: grid;
+	flex-flow: column wrap;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
 }
 
-.wiki ul {
-	columns: 3;
-	list-style-type: none
+.card {
+	border-style: solid;
+	border-radius: 10px;
+	padding: 10px;
 }
 
-section {
-	padding-bottom: 20px;
+.card a {
+	padding: none;
 }
+
+.card:nth-child(1){
+	background-color: var(--f2);
+	background-image: var(--n);
+}
+.card:nth-child(2){
+	background-color: var(--f3);
+	background-image: var(--n);
+}
+.card:nth-child(3){
+	background-color: var(--f4);
+	background-image: var(--n);
+}
+
 
 /*-----------------*/
+
 footer {
 	padding-left: 20px;
 	padding-bottom: 20px;
@@ -226,50 +250,46 @@ footer {
 /*also applies to acordian arrows*/
 ::marker {/*find a way to make this inline*/
 	display: inline;
-	color: var(--f);
+	color: var(--text);
 }
 
 /*link styling in-text*/
 sup.footnote-ref a {
-	color: blue;
+	color: var(--f2);
 }
 
 
-/*COLOUR TESTING!!!!*/
-.test li {
-	display: block;
+/* --- map styling --- */
+
+.wiki ul{
+	list-style-type: disc;
+	padding: 5px;
+}
+
+.wiki details {
 	border-style: solid;
-	padding: 15px;
-	margin: 15px;
+	border-radius: 10px;
+	padding-left: 8px;
+	margin: 3px;
 }
 
-.test li:nth-child(1){
-	background-color: var(--f);
-	background-image: var(--n);
-
-}
-
-.test li:nth-child(2){
+.wiki details:nth-child(1){
 	background-color: var(--f2);
 	background-image: var(--n);
-
 }
 
-.test li:nth-child(3){
+.wiki details:nth-child(2){
 	background-color: var(--f3);
 	background-image: var(--n);
-
 }
 
-.test li:nth-child(4){
+.wiki details:nth-child(3){
 	background-color: var(--f4);
 	background-image: var(--n);
-
 }
 
-.test li:nth-child(5){
+.wiki details:nth-child(4){
 	background-color: var(--f5);
 	background-image: var(--n);
-
 }
 
