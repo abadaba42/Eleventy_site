@@ -38,6 +38,13 @@
 	}
 }
 
+@font-face {
+	font-family: "Distro Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Distro Bold"), url("/assests/fonts/DISTROB_.woff") format("woff");
+  }
+
 /*Initialise all*/
 * {
 	margin: 0;
@@ -51,10 +58,24 @@ html {
 	min-width: min-content;
 	width: 100%;
 	
-	font-family: 'roboto', sans-serif;
+	font-size: 1.9em;
+	margin-top: 0;
+	margin-bottom: 32px;
+	font-weight: 500;	
+	font-family: "Distro Bold"; /*titleFont3*/
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;
+
+
+	/* font-family: 'roboto', sans-serif; */
     background-color: var(--background);
     color: var(--accent);
 	font-size: 20px;
+}
+
+h1 {
+	font-family: "Distro Bold";
+	font-weight: bold;
 }
 
 body {
@@ -113,11 +134,22 @@ article {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 15px;
-	max-width: 700px;
+	max-width: 800px;
 	border-style: solid;
 	border-radius: 10px;
 
 	list-style-position: inside;
+}
+
+article ul {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+}
+
+article p {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 article table {
@@ -127,6 +159,14 @@ article table {
 	width: max-content;
 	max-width: 100%;
 	overflow: auto;
+}
+
+article a {
+	color: var(--f2);
+}
+
+article a:hover{
+	color: var(--accent);
 }
 
 table th {
@@ -160,11 +200,11 @@ article img {
 	width: 100%;
 	max-height: 200vh;
 	object-fit: cover;
-	/* margin: 2rem auto; */
+	margin: 2rem auto;
 }
 
 blockquote {
-	margin: 2rem 0;
+	margin: 1rem 0;
 	padding: 0.5em 1rem;
 	border-left: 3px solid var(--accent);
 	background-color: rgba(0, 0, 0, 0.05);
@@ -210,9 +250,9 @@ hr {
 
 .card_grid { 
 	display: grid;
-	flex-flow: column wrap;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(150px,250px));
+	gap: 10px;	
+	justify-content: center;
 }
 
 .card {
@@ -271,6 +311,10 @@ sup.footnote-ref a {
 	border-radius: 10px;
 	padding-left: 8px;
 	margin: 3px;
+}
+
+.wiki a {
+	color: var(--text);
 }
 
 .wiki details:nth-child(1){

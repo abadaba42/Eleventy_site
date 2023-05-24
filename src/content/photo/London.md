@@ -45,6 +45,12 @@ title: London
     <div class = "gallery_item">
         <img src="{{ '/assests/london/london_13.jpg' | url }}" alt="london_13">
     </div>
+    <div class = "gallery_item">
+        <img src="{{ '/assests/london/london_14.jpg' | url }}" alt="london_14">
+    </div>
+    <div class = "gallery_item">
+        <img src="{{ '/assests/london/london_15.jpg' | url }}" alt="london_15">
+    </div>
 </div>
 
 
